@@ -1,0 +1,56 @@
+.board {
+    padding-top: 14px;
+    height: 240px;
+    width: 240px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    border: 1px solid gray;
+    height: 80px;
+    width: 80px;
+    text-align:center;
+    line-height: 80px;
+    /*Use line-height for making text vertically align in a div element*/
+    font-size: 3rem;
+    cursor:pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8){
+    border-bottom: none;
+}
+
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+.infoAndMybtn{
+    margin:auto;
+    width: 300px;
+    margin-top: 50px;
+}
+h3{
+    text-align: center;
+}
+#mybtn{
+    margin-left: 125px;
+    visibility: hidden;
+}
+h2{
+    text-align: center;
+    margin-top: 175px;
+}
